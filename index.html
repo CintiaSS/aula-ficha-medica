@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <HTML lang="pt-br">
+        
+
+        <head>
+            <title>Ficha médica</title>
+            <meta  charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-grid.min.css">
+            <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text" href="js/main.js">
+        </head>
+
+        <body>
+              
+            <h1 id=> Nome: </h1>
+
+            <h2> Ficha: </h2>
+            <ul>
+
+  
+ 
+            </ul>
+            
+        </body>
+
+
+        <script>
+            Nome=prompt("Qual seu nome completo?")
+            tagh1.innerHTML=Nome
+            nascimento=prompt("Qual seu nascimento?")
+            idade=prompt("Qual sua idade?")
+            temcondição=confirm("Tem condição pré-existentes?")
+            temacompanhamento=confirm("Precisa de acompanhamento médico?")
+
+            if(temcondição){condição= "Sim"}
+            if(temcondição==false){condição= "Não"}
+
+            if(temacompanhamento){acompanhamento="Sim"}
+            if(temacompanhamento==false){acompanhamento="Não"}
+
+            lista.innerHTML=`<li> Data Nascimento: ${nascimento} </li>
+                <li> Idade: ${idade} anos </li> 
+                <li> Tem condição pré-existentes: ${condição} </li> 
+                <li> Precisa de acompanhamento médico: ${acompanhamento} </li>`
+                
+
+        </script>
+
+        
+        
+    </HTML>
